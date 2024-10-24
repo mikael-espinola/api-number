@@ -12,4 +12,4 @@ def get_sorted_numbers():
     return jsonify(sorted_numbers)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
