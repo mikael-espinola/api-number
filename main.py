@@ -3,7 +3,7 @@ from flask_cors import CORS
 import random
 
 app = Flask(__name__)
-CORS(app, resources={r"/api/*": {"origins": ["https://sena-iota.vercel.app/", "http://localhost:3000"]}})
+CORS(app, resources={r"/api/*": {"origins": ["https://sena-iota.vercel.app", "http://localhost:3000"]}})
 
 @app.route('/api/sort-number', methods=['GET'])
 def get_sorted_numbers():
